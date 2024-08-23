@@ -41,97 +41,103 @@
       };
     </script>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope bg-gray-100">
     <!-- Header section -->
-    <header class="max-w-screen-xl mx-auto">
-      <nav>
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
+    <header class="w-full bg-white">
+      <section class="max-w-screen-xl mx-auto bg-white">
+        <!-- Navbar section -->
+        <nav>
+          <div class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right bg-lime-300 rounded-full p-2 -rotate-45"
+              ></i>
+
+              <a class="text-xl font-bold pl-2">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 space-x-5">
+                <li><a>Home</a></li>
+                <li><a>Service</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end flex gap-3">
+              <div class="flex gap-3">
+                <i
+                  class="fa-solid fa-magnifying-glass bg-slate-100 text-black rounded-full p-2"
+                ></i>
+                <i
+                  class="fa-solid fa-cart-shopping bg-slate-100 text-black rounded-full p-2"
+                ></i>
+              </div>
+              <div class="btn bg-barn-primary rounded-full">
+                <a class="">Book Consult</a>
+                <i
+                  class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 -rotate-45"
+                ></i>
               </div>
             </div>
-            <i
-              class="fa-solid fa-arrow-right bg-lime-300 rounded-full p-2 -rotate-45"
-            ></i>
-
-            <a class="text-xl font-bold pl-2">Rinterio</a>
           </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a>Home</a></li>
-              <li><a>Service</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end flex gap-3">
-            <div class="flex gap-3">
-              <i
-                class="fa-solid fa-magnifying-glass bg-slate-100 text-black rounded-full p-2"
-              ></i>
-              <i
-                class="fa-solid fa-cart-shopping bg-slate-100 text-black rounded-full p-2"
-              ></i>
+        </nav>
+        <!-- Banner section -->
+        <section
+          class="my-8 max-w-md md:max-w-screen-md lg:max-w-screen-xl mx-auto"
+        >
+          <div class="flex flex-col items-center text-center space-y-5">
+            <!-- Banner image -->
+            <div>
+              <img src="./assets/banner.png" alt="" />
             </div>
-            <div class="btn bg-barn-primary rounded-full">
-              <a class="">Book Consult</a>
-              <i
-                class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 -rotate-45"
-              ></i>
+            <!-- Banner text -->
+            <div class="space-y-5">
+              <h1 class="text-5xl font-extrabold">
+                A barn house of this design has a <br />
+                striking appearance
+              </h1>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                <br />
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+              <div
+                class="w-full md:w-1/5 lg:w-1/5 btn bg-lime-200 rounded-full border-lime-300"
+              >
+                <a class="">View Details</a>
+                <i
+                  class="fa-solid fa-arrow-right bg-barn-primary text-black rounded-full p-1 -rotate-45"
+                ></i>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </section>
+      </section>
     </header>
     <!-- Main section -->
     <main class="max-w-md md:max-w-screen-md lg:max-w-screen-xl mx-auto">
-      <!-- Banner section -->
-      <section class="mt-8">
-        <div class="flex flex-col items-center text-center space-y-5">
-          <!-- Banner image -->
-          <div>
-            <img src="./assets/banner.png" alt="" />
-          </div>
-          <!-- Banner text -->
-          <div class="space-y-5">
-            <h1 class="text-5xl font-extrabold">
-              A barn house of this design has a <br />
-              striking appearance
-            </h1>
-            <p>
-              The barn house captivates with its blend of rustic charm and
-              modern sophistication, featuring weathered wood, sleek metal
-              <br />
-              accents, and large windows that flood the space with natural
-              light.
-            </p>
-            <div
-              class="w-full md:w-1/5 lg:w-1/5 btn bg-lime-200 rounded-full border-lime-300"
-            >
-              <a class="">View Details</a>
-              <i
-                class="fa-solid fa-arrow-right bg-barn-primary text-black rounded-full p-1 -rotate-45"
-              ></i>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </main>
   </body>
 </html>
