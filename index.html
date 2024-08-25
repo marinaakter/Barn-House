@@ -484,26 +484,48 @@
               </p>
             </div>
             <!-- Form content -->
-            <div class="space-y-3 py-5 my-4">
-              <label class="input flex items-center rounded-full">
-                <input type="text" class="grow" placeholder="First Name *" />
-              </label>
-              <label class="input flex items-center rounded-full">
-                <input type="text" class="grow" placeholder="Last Name *" />
-              </label>
-              <label class="input flex items-center rounded-full">
-                <input type="text" class="grow" placeholder="Phone Number *" />
-              </label>
-              <label class="input flex items-center rounded-full">
-                <input type="text" class="grow" placeholder="Email Address *" />
-              </label>
-              <label class="input flex items-start rounded-xl h-48 pt-4">
-                <input
-                  type="text"
-                  class="grow"
-                  placeholder="Write your message here "
-                />
-              </label>
+            <div
+              class=" py-5 my-4 grid grid-cols-1 lg:grid-cols-2 lg:gap-4 items-center"
+            >
+              <div class="">
+                <label class="input flex items-center rounded-full">
+                  <input type="text" class="grow" placeholder="First Name *" />
+                </label>
+              </div>
+              <div>
+                <label class="input flex items-center rounded-full">
+                  <input type="text" class="grow" placeholder="Last Name *" />
+                </label>
+              </div>
+              <div>
+                <label class="input flex items-center rounded-full">
+                  <input
+                    type="text"
+                    class="grow"
+                    placeholder="Phone Number *"
+                  />
+                </label>
+              </div>
+              <div>
+                <label class="input flex items-center rounded-full">
+                  <input
+                    type="text"
+                    class="grow"
+                    placeholder="Email Address *"
+                  />
+                </label>
+              </div>
+              <div class="lg:col-span-2">
+                <label
+                  class="input flex items-start rounded-xl h-48 pt-4 "
+                >
+                  <input
+                    type="text"
+                    class="grow"
+                    placeholder="Write your message here "
+                  />
+                </label>
+              </div>
             </div>
           </div>
         </div>
