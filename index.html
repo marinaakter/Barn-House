@@ -312,7 +312,7 @@
         <!-- Latest Portfolio -->
         <section>
           <!-- latest portfolio main div -->
-          <div>
+          <div class="flex flex-col justify-center items-center gap-6">
             <!-- text content -->
             <div class="text-center space-y-3">
               <button class="px-2 py-2 bg-white rounded-full text-sm font-bold">
@@ -326,24 +326,85 @@
               </p>
             </div>
             <!-- Portfolio Card content -->
-            <div class="grid grid-cols-1 lg:grid-cols-">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
               <!-- Card 1 -->
-              <div class="bg-white rounded-xl">
-                <div class="">
-                  <img src="./assets/img1.png" alt="" class="" />
+              <div class="card bg-base-100 lg:col-span-3">
+                <div class="card-body lg:flex lg:flex-row">
+                  <div>
+                    <img class="w-full" src="./assets/img1.png" alt="" />
+                  </div>
+                  <div class="lg:ml-5 lg:w-1/2">
+                    <div class="space-y-5">
+                      <h2
+                        class="card-title text-2xl text-gray-700 font-extrabold"
+                      >
+                        Commercial
+                      </h2>
+                      <p class="text-gray-500">
+                        The barn house captivates with its blend of rustic charm
+                        and modern. The barn house captivates with its blend of
+                        rustic charm and modern.
+                      </p>
+                    </div>
+                    <div class="card-actions justify-start mt-5">
+                      <a class="font-extrabold text-lg">View Details</a>
+                      <i
+                        class="fa-solid fa-arrow-right bg-barn-primary text-black rounded-full p-1 -rotate-45"
+                      ></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="p-4">
-                  <h2 class="text-lg font-bold text-gray-900">Commercial</h2>
-                  <p class="text-gray-500 text-justify">
-                    The barn house captivates with its blend of rustic charm and
-                    modern. The barn house captivates with its blend of rustic
-                    charm and modern .
-                  </p>
-                  <a
-                    href="#"
-                    class="inline-block mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-                    >View Details</a
-                  >
+              </div>
+              <!-- Card 2 -->
+              <div class="card bg-base-100">
+                <div class="card-body">
+                  <div>
+                    <img class="w-full" src="./assets/img2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="card bg-base-100">
+                <div class="card-body">
+                  <div>
+                    <img class="w-full" src="./assets/img3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="card bg-base-100 lg:col-span-2">
+                <div class="card-body lg:flex lg:flex-row">
+                  <div>
+                    <img class="w-full" src="./assets/img4.png" alt="" />
+                  </div>
+                  <div class="lg:w-1/2 lg:ml-3">
+                    <div class="space-y-5">
+                      <h2
+                        class="card-title text-2xl text-gray-700 font-extrabold"
+                      >
+                        Commercial
+                      </h2>
+                      <p class="text-gray-500">
+                        The barn house captivates with its blend of rustic charm
+                        and modern. The barn house captivates with its blend of
+                        rustic charm and modern .
+                      </p>
+                    </div>
+                    <div class="card-actions justify-start mt-5">
+                      <a class="font-extrabold text-lg">View Details</a>
+                      <i
+                        class="fa-solid fa-arrow-right bg-barn-primary text-black rounded-full p-1 -rotate-45"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="card bg-base-100">
+                <div class="card-body">
+                  <div>
+                    <img class="w-full" src="./assets/img5.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -487,7 +548,7 @@
             <div
               class="py-5 my-4 grid grid-cols-1 lg:grid-cols-2 lg:w-2/3 lg:mx-auto gap-4 items-center"
             >
-              <div class="">
+              <div>
                 <label class="input flex items-center rounded-full">
                   <input type="text" class="grow" placeholder="First Name *" />
                 </label>
@@ -553,8 +614,10 @@
           </p>
         </div>
         <!-- nav items -->
-        <div class="text-center ">
-          <ul class="text-gray-400 space-y-5 lg:space-y-0 lg:flex lg:flex-cols lg:justify-center lg:items-center lg:gap-20 lg:mb-5">
+        <div class="text-center">
+          <ul
+            class="text-gray-400 space-y-5 lg:space-y-0 lg:flex lg:flex-cols lg:justify-center lg:items-center lg:gap-20 lg:mb-5"
+          >
             <li><a>Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
