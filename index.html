@@ -52,32 +52,76 @@
     <header class="w-full bg-white pb-16 pt-5">
       <section class="max-w-screen-xl mx-auto bg-white">
         <!-- Navbar section -->
-        <nav>
-          <div class="navbar">
+        <!-- <section>
+          <nav class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m4 6h8" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-xl">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="hidden lg:flex">
+                <a class="btn btn-primary" href="#">Book a Consult</a>
+                <div class="dropdown dropdown-end">
+                  <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l8 10L21 3h-18z" /></svg>
+                      <span class="badge badge-sm indicator-item">0</span>
+                    </div>
+                  </label>
+                  <ul tabindex="0" class="menu menu-compact dropdown-content mt-3">
+                    <li><a href="#">Cart</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown dropdown-end">
+                  <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0 1 14 0z" /></svg>
+                      <span class="badge badge-sm indicator-item">0</span>
+                    </div>
+                  </label>
+                  <ul tabindex="0" class="menu menu-compact dropdown-content mt-3">
+                    <li><a href="#">Search</a></li>
+                  </ul>
                 </div>
               </div>
-              <i
-                class="fa-solid fa-arrow-right bg-lime-300 rounded-full p-2 -rotate-45"
-              ></i>
+            </div>
+          </nav>
+         </section> -->
+        <nav>
+          <div class="navbar">
+            <div class="navbar-start flex justify-between w-full lg:w-1/2">
+              <!-- Logo -->
+              <div>
+                <i
+                  class="fa-solid fa-arrow-right bg-lime-300 rounded-full p-2 -rotate-45"
+                ></i>
 
-              <a class="text-xl font-bold pl-2">Rinterio</a>
+                <a class="text-2xl font-extrabold pl-2">Rinterio</a>
+              </div>
+              <!-- Menu icon -->
+              <div class="lg:hidden mr-8 bg-gray-50 border p-3 rounded-full">
+                <i class="fa-solid fa-bars"></i>
+              </div>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 space-x-5">
@@ -88,7 +132,7 @@
                 <li><a>Contact Us</a></li>
               </ul>
             </div>
-            <div class="navbar-end flex gap-3">
+            <div class="navbar-end hidden lg:flex gap-3">
               <div class="flex gap-3">
                 <i
                   class="fa-solid fa-magnifying-glass bg-slate-100 text-black rounded-full p-2"
